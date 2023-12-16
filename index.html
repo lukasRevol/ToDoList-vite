@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ToDo List</title>
+	</head>
+	<body>
+		<div class="app">
+			<div class="add">
+				<h1 class="add_heading">ToDo List</h1>
+				<div class="add_box">
+					<input
+						class="add_box_input"
+						type="text"
+						placeholder="Add to do text"
+					/>
+					<button class="add_box_btn">ADD</button>
+				</div>
+			</div>
+			<div class="list">
+				<h2 class="list_heading">ToDo's</h2>
+				<div class="list_box">
+					<div class="list_box_item">
+						<p class="item-title">todo title</p>
+						<div class="item_btn-box">
+							<button class="item-btn add-btn">doned</button>
+							<button class="item-btn edit-btn">edit</button>
+							<button class="item-btn delete-btn">delete</button>
+						</div>
+					</div>
+					<div class="list_box_item">
+						<p class="item-title">todo title</p>
+						<div class="item_btn-box">
+							<button class="item-btn add-btn">doned</button>
+							<button class="item-btn edit-btn">edit</button>
+							<button class="item-btn delete-btn">delete</button>
+						</div>
+					</div>
+					<div class="list_box_item">
+						<p class="item-title">todo title</p>
+						<div class="item_btn-box">
+							<button class="item-btn add-btn">doned</button>
+							<button class="item-btn edit-btn">edit</button>
+							<button class="item-btn delete-btn">delete</button>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="popup">
+      <h3 class="popup_heading">Edit task:</h3>
+      <input class="popup_input" type="text">
+      <div class="popup_btn-box">
+        <button class="btn popup-accept-btn">Accept</button>
+        <button class="btn popup-decline-btn">Cancel</button>
+      </div>
+    </div>
+
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>

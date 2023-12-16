@@ -1,0 +1,155 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	min-height: 100vh;
+	min-height: 100svh;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	background-color: #222;
+	color: #fff;
+}
+
+.app {
+	margin-top: 4em;
+	border-radius: 10px;
+	overflow: hidden;
+	width: clamp(300px, 90vw, 800px);
+	min-width: 300px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.397);
+}
+
+.add {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1em 2em;
+	background: linear-gradient(-30deg, #282177, #2989c0);
+	background-color: red;
+	&_box {
+		width: 100%;
+		margin: 1em;
+		display: flex;
+		align-items: center;
+		&_input {
+			width: 100%;
+			margin: 0 1em;
+			padding: 0.6em 1.2em;
+			border-radius: 5px;
+			border: none;
+		}
+		&_btn {
+			padding: 0.6em 1.2em;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			&:hover {
+				color: skyblue;
+				background-color: #222;
+			}
+		}
+	}
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1em 2em;
+	color: #222;
+	background-color: #fff;
+	&_heading {
+		margin: 0.6em;
+	}
+	&_box {
+		width: 100%;
+		&_item {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 1em 0;
+			padding: 0.2em 1em;
+			border-radius: 5px;
+			background-color: #f8f8f8;
+
+			.item_btn-box {
+				.item-btn {
+					padding: 0.8em;
+					border: none;
+					border-radius: 5px;
+					background: none;
+					cursor: pointer;
+					&:hover {
+						background: radial-gradient(
+							rgba(159, 205, 224, 0.356),
+							transparent 60%
+						);
+					}
+				}
+			}
+		}
+	}
+}
+
+.popup {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+
+	position: fixed;
+	bottom: 0;
+
+	width: clamp(300px, 80vw, 700px);
+
+	margin-bottom: 4em;
+	padding: 1em 2em;
+
+	// color: #222;
+	background: linear-gradient(-30deg, #282177, #2989c0);
+	border-radius: 10px;
+
+	z-index: 10;
+	&_heading {
+		margin-bottom: 1em;
+	}
+	&_input {
+		width: 100%;
+		margin: 0 1em;
+		padding: 0.6em 1.2em;
+		border-radius: 5px;
+		border: none;
+	}
+  &_btn-box {
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    .btn {
+      min-width: 150px;
+      margin: .5em 1em;
+      padding: 0.6em;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			&:hover {
+				color: skyblue;
+				background-color: #222;
+			}
+    }
+  }
+}
+
+.popup-show {
+  display: flex;
+}
+.doned {
+  text-decoration: line-through;
+  color: #999;
+}
